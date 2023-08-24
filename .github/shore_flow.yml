@@ -1,24 +1,24 @@
-name: Shorebird Patch
+# name: Shorebird Patch
 
-on:
-  push
+# on:
+#   push
 
-jobs:
-  patch:
-    defaults:
-      run:
-        shell: bash
+# jobs:
+#   patch:
+#     defaults:
+#       run:
+#         shell: bash
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: 📚 Git Checkout
-        uses: actions/checkout@v3
+#     steps:
+#       - name: 📚 Git Checkout
+#         uses: actions/checkout@v3
 
-      - name: 🐦 Setup Shorebird
-        uses: shorebirdtech/setup-shorebird@v0
+#       - name: 🐦 Setup Shorebird
+#         uses: shorebirdtech/setup-shorebird@v0
 
-      - name: 🚀 Shorebird Patch
-        run: shorebird patch android
-        env:
-          SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
+#       - name: 🚀 Shorebird Patch
+#         run: shorebird patch android
+#         env:
+#           SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
